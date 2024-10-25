@@ -31,6 +31,9 @@ a{
     transition: color 0.3s ease-in-out, border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
+.fz-hack{
+    font-size: 0;
+}
 .btn:hover{
     background-color: #7875FE;
     color: #FFFFFF;
@@ -135,8 +138,51 @@ ol{
     padding: 0;
 }
 
+/* Result */
+
+.result{
+    width: 100%;
+    background-color: #ebebeb;
+    padding-block: 90px;
+}
+
+.result__titel{
+    display: flex;
+    gap: 25px;
+    justify-content: space-between;
+    padding-bottom: 90px;
+}
+
+.result__container{
+    border-top: 1px solid #C0C0C0;
+    padding-top: 20px;
+    display: flex;
+    width: 100%;
+    max-width: 350px;
+}
+
+.result__content{
+    display: flex;
+    gap: 30px;
+}
+
+.content{
+    max-width: 350px;
+}
+
+.content h1{
+    font-size: 40px;
+    font-weight: 400;
+    color: #666666;
+    margin-bottom: 20px;
+}
+
+.content p{
+    line-height: 170%;
+}
+
 @media screen and (max-width: 1110px) {
-    body{
+    .container{
         padding-inline: 15px;
     }
     .responsiv{
@@ -147,6 +193,20 @@ ol{
     }
     .hero{
         gap: 70px;
+    }
+
+    .result__container{
+        width: 290px;
+    }
+}
+
+@media screen and (max-width: 1060px) {
+    
+    .content h1{
+        font-size: 30px;
+    }
+    .result__content img{
+        max-width: 330px;
     }
 }
 
@@ -161,6 +221,14 @@ ol{
     .hero{
         gap: 60px;
     }
+
+}
+
+@media screen and (max-width: 950px) {
+    .result__container{
+        width: 220px;
+    }
+
 }
 
 @media screen and (max-width: 760px) {
@@ -190,7 +258,44 @@ ol{
         gap: 50px; 
     }
 
+    .catalog_btn{
+        margin-bottom: 50px;
+    }
+
     .responsiv{
         display: none;
+    }
+    .result__container{
+        width: 210px;
+        flex-direction: column;
+    }
+
+    .result__content{
+        flex-direction: column;
+    }
+
+    .content h1{
+        font-size: 24px;
+    }
+    .content p{
+        font-size: 16px;
+    }
+
+    .content{
+        max-width: 550px;
+    }
+    
+}
+
+@media screen and (max-width: 700px) {
+    .result__titel{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .result__container{
+        width: 100%;
+        flex-direction: row;
+        gap: 30px;
     }
 }
