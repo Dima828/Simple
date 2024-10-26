@@ -273,6 +273,37 @@ ol{
     object-fit: cover;
 }
 
+/* Sketch book */
+.sketch_book{
+    padding-top: 90px;
+}
+.sketch_book__inner{
+    display: flex;
+    column-gap: 30px;
+}
+
+.sketch_book__title{
+    font-size: 40px;
+    color: #666666;
+    margin-bottom: 8px;
+    font-weight: 400;
+}
+
+.desk{
+    line-height: 170%;
+    margin-bottom: 30px;
+}
+
+
+.sketch_book__images{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.sketch_book__img{
+    width: 100%;
+}
 
 @media screen and (max-width: 1110px) {
     .container{
@@ -346,6 +377,11 @@ ol{
         height: 70px;
     }
 
+    .sketch_book__images{
+        max-width: 569px;
+        width: 100%;
+    }
+
 }
 
 @media screen and (max-width: 760px) {
@@ -411,6 +447,15 @@ ol{
         flex-wrap: wrap;
         gap: 10px;
     }
+
+    .sketch_book__inner{
+        flex-direction: column-reverse;
+    }
+
+    .sketch_book{
+        padding-top: 40px;
+    }
+    
 }
 
 @media screen and (max-width: 700px) {
