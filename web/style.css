@@ -305,6 +305,47 @@ ol{
     width: 100%;
 }
 
+
+/* Footer */
+
+.footer{
+    background-color: #4C5866;
+}
+
+.footer__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 28px;
+}
+
+.social__icon-list{
+    display: flex;
+    column-gap: 30px;
+}
+
+.fa-brands{
+    color: white;
+    transition: color 0.3s ease-in-out;
+}
+
+.fa-brands:hover{
+    color: #DAD9FB;
+}
+
+.fa-brands:active{
+    color: #7875FE;
+}
+
+.footer__bottom{
+    background-color: #FFFFFF;
+    text-align: center;
+}
+.footer__bottom span{
+    text-transform: uppercase;
+    color: #4C5866;
+}
+
 @media screen and (max-width: 1110px) {
     .container{
         padding-inline: 15px;
