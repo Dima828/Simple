@@ -190,14 +190,20 @@ ol{
 .product{
     padding-block: 90px;
 }
+
 .product__list{
     display: flex;
-    gap: 30px;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.block__list__item{
+    max-width: 255px;
     width: 100%;
 }
-.item__iamge{
-    margin-bottom: 20px;
-    width: 100%;
+
+.product__link:hover{
+    color: #4946B4;
 }
 
 .product__title{
@@ -227,22 +233,6 @@ ol{
     transition: color 0.3s ease-in-out;
 }
 
-.product__link:hover{
-    color: #4946B4;
-}
-
-.list__item{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    margin-bottom: 30px;
-}
-.block__list__item{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 100%;
-}
 
 /* Partners */
 
@@ -364,20 +354,19 @@ ol{
         width: 290px;
     }
 
-    .product__list{
-        max-width: 330px;
-        flex-direction: column;
-        gap: 0;
-        
-    }
     .item__iamge{
         max-width: 330px;
     }
 
+    .product__list{
+        justify-content: center;
+        row-gap: 60px;
+    }
+
     
     .partners__list-item{
-        
-        height: 100px;
+        max-width: 210px;
+        width: 100%;
     }
 }
 
@@ -441,7 +430,7 @@ ol{
     .header__nav{
         width: 100%;
         padding-top: 30px;
-        order: 3;
+        order: 2;
     }
 
     .header__icon{
@@ -497,6 +486,10 @@ ol{
         padding-top: 40px;
     }
     
+    .sketch_book__desk{
+        margin-bottom: 60px;
+    }
+    
 }
 
 @media screen and (max-width: 700px) {
@@ -510,4 +503,17 @@ ol{
         flex-direction: row;
         gap: 30px;
     }
+}
+@media screen and (max-width:335px) {
+
+    .footer__inner{
+        column-gap: 10px;
+    }
+    .social__icon-list{
+        width: 100%;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+
 }
